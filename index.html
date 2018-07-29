@@ -1,1 +1,29 @@
-Peace yo
+<!DOCTYPE html>
+<html ng-app="soham">
+  <head>
+    <title>Soham's Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="style_other_pages.css">
+    <link rel="icon" href="name_logo.svg">
+  </head>
+  <body>
+    <div id="loading">
+      <img id="loading-image" src="images/Logo.gif" alt="Loading..." />
+    </div>
+    <div ng-view></div>
+    <script src='angular-1.7.2/angular.js'></script>
+    <script src='angular-1.7.2/angular-resource.js'></script>
+    <script src='angular-1.7.2/angular-route.js'></script>
+    <script type="text/javascript" src="app.js" ></script>
+    <script language="javascript" type="text/javascript">
+      var myFunc = function() {
+        document.getElementById("loading").style.display = "none";
+      }
+      window.onload = function() {
+        setTimeout(myFunc, 10000);
+      } 
+    </script>
+  </body>
+</html>
