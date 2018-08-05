@@ -285,6 +285,7 @@ Responsive Website
 	}
 	#gateway{
 		width: 96vw;
+		height: auto;
 	}
 	/*****************************************/
 	/*Nav Bar*/
