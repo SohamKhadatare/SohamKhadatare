@@ -23,9 +23,9 @@
 <!-- HOME-->
 <div id="home"  ng-class="{'less_opacity':less_opacity}" ng-init="less_opacity=false">
   <div class="heading">Hi!</div>
-  <div class="desc" id="name">I am <p class="bold">Soham Khadtare</p></div>
+  <div class="desc" id="name">I am <p class="bold">Soham Khadatare</p></div>
   <div class="desc" id="name">
-    And I am <p class="bold">Graphic Designer</p> based in <p class="bold">Mumbai</p>
+    And I am a <p class="bold">Graphic Designer</p> based in <p class="bold">Mumbai</p>
   </div>
   <img id="gateway" src="gatewayofindia.png">
 </div>
@@ -39,7 +39,7 @@
       <div class="nav-item">Motion Graphics</div>
   </div>
   <div class="pjts" id="lappy_display">
-    <div id="pjt_1">
+    <div id="pjt_1" ng-click="switch_page('/36_days_of_type')">
       <div class="nmbr bold">01</div>
       <div class="line">
         <div class="line_comp1"></div>
@@ -48,17 +48,15 @@
       <div class="pjt_content">
         <div class="pjt_heading">36 Days of Type</div>
         <div class="pjt_desp">Illstrations for every Alphabet and Number made daily for 36 days</div>
-        <div ng-click="switch_page('/36_days_of_type')" class="pjt_desp italic" style="cursor:pointer">View More</div>
       </div>
       <img src="images/A-01.png" class="pjt_img">
     </div>
 
-    <div id="pjt_2">
+    <div id="pjt_2" ng-click="switch_page('/token')">
       <img src="images/Token.png" class="pjt_img">
       <div class="pjt_content">
         <div class="pjt_heading">Token, The Toucan</div>
         <div class="pjt_desp">Mascot Design for Inter IIT Cultural Meet 2017-18</div>
-        <div ng-click="switch_page('/token')" class="pjt_desp italic" style="cursor:pointer">View More</div>
       </div>
       <div class="line">
         <div class="line_comp1"></div>
@@ -67,7 +65,7 @@
       <div class="nmbr bold">02</div>
     </div>
 
-    <div id="pjt_3">
+    <div id="pjt_3" ng-click="switch_page('/4th_poster_typo')">
       <div class="nmbr bold">03</div>
       <div class="line">
         <div class="line_comp1"></div>
@@ -76,17 +74,15 @@
       <div class="pjt_content">
         <div class="pjt_heading">4th Poster Typo Contest</div>
         <div class="pjt_desp">Submission for the 4th Poster Typography Contest conducted by Museum of Typography, Greece</div>
-        <div ng-click="switch_page('/4th_poster_typo')" class="pjt_desp italic" style="cursor:pointer">View More</div>
       </div>
       <img src="images/Poster.png" class="pjt_img">
     </div>
 
-    <div id="pjt_4">
+    <div id="pjt_4" ng-click="switch_page('/culturals_website')">
       <img src="images/Culturals.png" class="pjt_img">
       <div class="pjt_content">
         <div class="pjt_heading">Culturals Website</div>
         <div class="pjt_desp">Revamp of the Culturals Website, a portal for cultural activites</div>
-        <div ng-click="switch_page('/culturals_website')" class="pjt_desp italic" style="cursor:pointer">View More</div>
       </div>
       <div class="line">
         <div class="line_comp1"></div>

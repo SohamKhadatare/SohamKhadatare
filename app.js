@@ -150,12 +150,10 @@ app.controller('HomeCtrl', ['$scope', '$window', '$location',
             alert("Email ID copied to clipboard!")
         }
         $scope.switch_page = function(path){
-            $window.scrollTo(0, 0);
             $location.path(path);
             $location.hash('');
         }
         $scope.switch_page_hash = function(path,hash){
-            $window.scrollTo(0, 0);
             $location.path(path);
             $location.hash(hash);
         }
