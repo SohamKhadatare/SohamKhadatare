@@ -140,6 +140,9 @@ app.controller('HomeCtrl', ['$scope', '$window', '$location',
             document.body.removeChild(el);
             alert("Phone Number copied to clipboard!")
         }
+
+        /*Copy Email function
+        --------------------------------------------------*/
         $scope.copy_mail = function(){
             const elem = document.createElement('textarea');
             elem.value = "soham.khadatare@gmail.com";
@@ -149,6 +152,9 @@ app.controller('HomeCtrl', ['$scope', '$window', '$location',
             document.body.removeChild(elem);
             alert("Email ID copied to clipboard!")
         }
+
+        /*Changing page functions
+        --------------------------------------------------*/
         $scope.switch_page = function(path){
             $window.scrollTo(0, 0);
             $location.path(path);

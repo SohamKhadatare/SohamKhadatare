@@ -140,6 +140,146 @@
 	padding-bottom: 10vh;
 }
 
+/****************************************************************************/
+/**********************************Resume*/
+/****************************************************************************/
+#resume_div{
+	transition:0.4s;
+	background-color: #222222;
+	color: white;
+	text-align: left;
+	padding-left: 15vw;
+	padding-right: 15vw;
+	padding-bottom: 0vh;
+	padding-top: 20vh;
+	overflow: auto;
+	height: 80vh;
+	position: fixed;
+	top: auto;
+	bottom: -110vh;
+	z-index: 50;
+}
+#resume_div.resume_appear{
+	bottom: 0;
+}
+#resume_div:after {
+  content: "";
+  display: block;
+  height: 20vh;
+  width: 100%;
+}
+.resume_heading{
+	width: 60vw;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 5.6vw;
+}
+.cross_icon{
+	width:4vw;
+}
+.cross{
+	display: table-cell;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.resume_basic_txt{
+	width: 37vw;
+	font-size: 1.3vw;
+	padding-top: 3vh;
+}
+.left_section,.right_section{
+	width: 35vw;
+	display: table-cell;
+}
+.section{
+	padding-top: 5vh;
+}
+.section_head{
+	font-size: 2.6vw;
+}
+.point{
+	padding-top: 3vh;
+}
+.point_top{
+	font-size: 1.3vw;
+	font-family: HKGrotesk_Bold;
+}
+.point_bot{
+	font-size: 1.3vw;
+}
+.time_loc{
+	display: table;
+	font-size: 1vw;
+}
+.time, .loc{
+	display: table-cell;
+	width: 17.5vw;
+	color: white;
+}
+.time_loc_icon{
+	width: 1vw;
+	vertical-align: -0.2vh;
+}
+
+.exp_img_icons{
+	display: table;
+	padding-top: 1vh;
+}
+.exp_img_icon{
+	display: table-cell;
+	padding-right: 1vw;
+	cursor: pointer;
+}
+.exp_img_icon img{
+	width: 6vw;
+}
+
+.download_resume{
+	font-family: HKGrotesk_italic;
+	padding-top: 6vh;
+}
+.download_resume a{
+	color: white;
+}
+.download_resume a img{
+	width: 1.5vw;
+	vertical-align: -0.2vh;
+}
+
+/***************************************************
+                Exp Image Divs
+*****************************************************/
+.exp_image{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: -120vh;
+	background-color: #222222;
+	transition:0.8s;
+	z-index: 75;
+}
+.exp_image_cross{
+	width: 5vw;
+	position: absolute;
+	top: 4vh;
+	right: 4vw;
+	cursor: pointer;
+}
+#Asset img:first-child{
+	height: 70vh;
+	margin:15vh;
+}
+#Flyrobe img:first-child{
+	height: 60vh;
+	margin: 20vh; 
+}
+#Lajpat img:first-child{
+	height: 80vh;
+	margin: 10vh;
+}
+.open_image{
+	top: 0vh;
+}
 /*******************************************************************
                             Media Queries
 *********************************************************************/
@@ -149,5 +289,107 @@
 	}
 	.days_36,.token,.typo_poster,.culturals_website{
 		font-size: 8vw;
+	}
+
+	/**************************/
+	/*******Resume*/
+	/**************************/
+	#resume_div{
+		padding-top: 10vh;
+		height: 90vh;
+	}
+	#resume_div:after {
+	  height: 10vh;
+	}
+	.resume_heading{
+		font-size: 8vw;
+	}
+	.cross_icon{
+		width:6vw;
+	}
+	.resume_basic_txt{
+		width: 62vw;
+		font-size: 3vw;
+	}
+	.left_section,.right_section{
+		width: 70vw;
+		display: block;
+	}
+	.section{
+		padding-top: 5vh;
+	}
+	.section_head{
+		font-size: 6vw;
+	}
+	.point{
+		padding-top: 3vh;
+	}
+	.point_top{
+		font-size: 3vw;
+		font-family: HKGrotesk_Bold;
+	}
+	.point_bot{
+		font-size: 3vw;
+	}
+	.time_loc{
+		display: table;
+		font-size: 2vw;
+	}
+	.time, .loc{
+		display: table-cell;
+		width: 35vw;
+	}
+	.time_loc_icon{
+		width: 2vw;
+	}
+
+	.exp_img_icons{
+		display: table;
+		padding-top: 1vh;
+	}
+	.exp_img_icon{
+		display: table-cell;
+		padding-right: 2vw;
+	}
+	.exp_img_icon img{
+		width: 12vw;
+	}
+
+	.download_resume{
+		font-family: HKGrotesk_italic;
+		padding-top: 5vh;
+	}
+	.download_resume a img{
+		width: 3vw;
+	}
+
+	/***************************************************
+	                Exp Image Divs
+	*****************************************************/
+	.exp_image_cross{
+		width: 7vw;
+		top: 4vh;
+		right: 4vw;
+	}
+	#Asset img:first-child{
+		height: 40vh;
+		margin-top:30vh;
+		margin-bottom:auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#Flyrobe img:first-child{ 
+		height: 25vh;
+		margin-top:37vh;
+		margin-bottom:auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#Lajpat img:first-child{
+		height: 70vh;
+		margin-top:15vh;
+		margin-bottom:auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }

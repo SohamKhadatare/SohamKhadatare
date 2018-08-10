@@ -230,6 +230,7 @@ a{
 #resume{
 	padding-top: 1vh;
 	font-family: HKGrotesk_italic;
+	cursor: pointer;
 }
 #get_in_touch{
 	padding-top: 3vh;
@@ -256,6 +257,7 @@ a{
 	cursor: pointer;
 	display: inline;
 }
+
 
 /*****************************************************************
 Responsive Website
