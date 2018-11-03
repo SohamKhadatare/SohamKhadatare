@@ -1,0 +1,208 @@
+<!-- Navbar -->
+<div id="top_nav" ng-init="act=2">
+    <img src="name_logo.png" id="name_logo"/>
+    <div class="nav_options" id="lappy_display">
+      <a ng-click="switch_page('/')" ng-class="{'active_top_nav':act==1}"><u>Home</u></a>
+      <a ng-click="switch_page_hash('/','projects')" ng-class="{'active_top_nav':act==2}"><u>Projects</u></a>
+      <a ng-click="scroll_to('contact')" ng-class="{'active_top_nav':act==3}"><u>Contact</u></a>
+    </div>
+</div>
+<!--phone nav bar-->
+<div ng-click="toggle_icon()" id="nav_icon">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+<div ng-class="{'nav_options':true,'disappear':disappear}" ng-init="disappear=true" id="phone_display nav_options">
+  <a ng-click="switch_page('/')" ng-class="{'active_top_nav':act==1}"><u>Home</u></a>
+  <a ng-click="switch_page_hash('/','projects')" ng-class="{'active_top_nav':act==2}"><u>Projects</u></a>
+  <a ng-click="scroll_to('contact'); toggle_icon()" ng-class="{'active_top_nav':act==3}"><u>Contact</u></a>
+</div>
+
+
+<!--Main Content-->
+<div  ng-class="{'main_content':true, 'less_opacity':less_opacity}" ng-init="less_opacity=false">
+  <div id="lappy_display" class="comic"><img src="icons/back.png" ng-click="switch_page_hash('/','pjt_5')" class="back"/>  Kazakh Zhiza Stories</div>
+  <div id="phone_display" class="comic"><img src="icons/back.png" ng-click="switch_page_hash('/','pjt_5_p')" class="back"/>  Kazakh Zhiza Stories</div>
+  
+  <div class="comic_content">
+    <div class="italic" style="display:block">Comic Book</div>
+    <img src="images/Cover.png" class="main_img"/>
+  </div>
+
+  <div class="comic_content"> 
+    The colection of comics in this book serve as a travelogue of my trip to Kazakhstan as an exchange student in the summer of 2018. Within it are some of the instances from the trip that stand out due to special reasons. The characters in this book are not fictional at all and resemble real people.
+  </div>
+
+  <div class="comic_content">    
+    The effort in making this book was immense but it would have been impossible to complete this endeavour without the guidance of Prof. Phani Tetali from the IDC Department of IIT Bombay. I would also like to thank all the participants and volunteers of AUA Deep Dive program held in Kazakhstan in the summer of 2018.
+  </div>
+  <object class = "pdf_view" data="partials/comic/magazine/viewer.html">
+  </object>
+
+</div>
+
+<a href="https://www.behance.net/sohamkhadatare" target="_blank"><div ng-class="{'behance':true,'less_opacity':less_opacity}">View full potfolio on <p style="color:white" class="bold">Behance</p></div></a>
+<!--Contact-->
+<div id="contact"  ng-class="{'less_opacity':less_opacity}">
+  <img src="face.png" id="face">
+  <div class="contact_txt">
+    <div class="heading">About Me</div>
+    <div>
+      <div class="contact_desp">I am  an undergraduate student of IIT Bombay, my Major is in Civil Engineering and my minor is in Design.</div>
+      <div id="resume" ng-click="open_resume_div=true">
+        View my Resume
+        <img src="icons/front.png" class="resume_arrow"/>
+      </div>
+    </div>
+    <div id="get_in_touch">
+      <div class="bold">Get in touch</div>
+      <img src="icons/phone.png" ng-click="copy_number()" class="icon"/>
+      <img src="icons/mail.png" ng-click="copy_mail()" class="icon"/>
+      <a href="https://www.facebook.com/sohamkhadatare" target="_blank"><img src="icons/fb.png" class="icon"/></a>
+      <a href="https://www.instagram.com/sohamkhadatare/" target="_blank"><img src="icons/insta.png" class="icon"/></a>
+      <a href="https://dribbble.com/sohamkhadatare" target="_blank"><img src="icons/ball.png" class="icon"/></a>
+    </div>
+  </div>
+</div>
+
+<!--Resume-->
+<div id="resume_div"  ng-class="{'resume_appear':open_resume_div}" ng-init="open_resume_div=false">
+  <div style="display:table">
+    <div class="resume_heading">Soham Khadatare</div>
+    <div class="cross"><img src="icons/cross.png" class="cross_icon"  ng-click="open_resume_div=false"/></div>
+  </div>
+  <div class="resume_basic_txt">
+    I am  an undergraduate student of IIT Bombay, my Major is in Civil Engineering and my minor is in Design. I am interested in Graphic Design and Branding. My hobbies are travelling, film-making, photography and food!
+  </div>
+  <div style="display:table">
+    <div class="left_section">
+      <div class="section">
+        <div class="section_head">Achievements</div>
+        <div class="point">
+          <div class="point_top">5th position</div>
+          <div class="point_bot">Adobe Certified Associate World Championship</div>
+          <div class="time_loc">
+            <div class="time">
+              <img src="icons/time.png" class="time_loc_icon"/>
+              August 2017 
+            </div>
+            <div class="loc">
+              <img src="icons/loc.png" class="time_loc_icon"/>
+              Anaheim, California, USA 
+            </div>
+          </div>
+        </div>
+
+        <div class="point">
+          <div class="point_top">Winner</div>
+          <div class="point_bot">Mascot Design, Inter - IIT Cultural Meet 2017</div>
+          <div class="time_loc">
+            <div class="time">
+              <img src="icons/time.png" class="time_loc_icon"/>
+              December 2017 
+            </div>
+            <div class="loc">
+              <img src="icons/loc.png" class="time_loc_icon"/>
+              Kanpur, India
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="section_head">Education</div>
+        <div class="point">
+          <div class="point_top">Civil Engineering | Major</div>
+          <div class="point_bot">Indian Institute of Technology, Bombay</div>
+          <div class="time_loc">
+            <div class="time">
+              <img src="icons/time.png" class="time_loc_icon"/>
+              2015-2019 
+            </div>
+            <div class="loc">
+              <img src="icons/loc.png" class="time_loc_icon"/>
+              Bombay, India
+            </div>
+          </div>
+        </div>
+                               
+        <div class="point">
+          <div class="point_top">Design | Minor</div>
+          <div class="point_bot">Indian Institute of Technology, Bombay</div>
+          <div class="time_loc">
+            <div class="time">
+              <img src="icons/time.png" class="time_loc_icon"/>
+              2015-2019 
+            </div>
+            <div class="loc">
+              <img src="icons/loc.png" class="time_loc_icon"/>
+              Bombay, India
+            </div>
+          </div>
+        </div>
+
+        <div class="point">
+          <div class="point_top">Cultural Exchange Student</div>
+          <div class="point_bot">Nazarbayev University, Asian Universities Alliance</div>
+          <div class="time_loc">
+            <div class="time">
+              <img src="icons/time.png" class="time_loc_icon"/>
+              July 2018 
+            </div>
+            <div class="loc">
+              <img src="icons/loc.png" class="time_loc_icon"/>
+              Astana, Kazakhstan 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="right_section">
+      <div class="section">
+        
+        <div class="section_head">Experience</div>
+        <div class="point">
+          <div class="point_top">Graphic Design Intern, Flyrobe</div>
+          <div class="point_bot">May '18-June '18</div>
+          <div class="exp_img_icons">
+            <div class="exp_img_icon">
+              <img src="images/Resume/Asset_icon.png" ng-click="open_image[0]=1"/>
+            </div>
+            <div class="exp_img_icon">
+              <img src="images/Resume/Flyrobe_icon.png" ng-click="open_image[1]=1"/>
+            </div>
+            <div class="exp_img_icon">
+              <img src="images/Resume/Lajpat_icon.png" ng-click="open_image[2]=1"/>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="download_resume">
+        <a href="resume/150040007.pdf" download="Soham_Khadatare.pdf">
+          <img src="icons/file.png"/>
+          Download the formal resume here.
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div id="Asset" ng-class="{'exp_image':true,'open_image':open_image[0]}" ng-init="open_image=[0,0,0]">
+  <img src="images/Resume/Asset.png"/>
+  <img src="icons/cross.png" class="exp_image_cross" ng-click="open_image[0]=0"/>
+</div>
+
+<div id="Flyrobe" ng-class="{'exp_image':true,'open_image':open_image[1]}">
+  <img src="images/Resume/Flyrobe.png"/>
+  <img src="icons/cross.png" class="exp_image_cross" ng-click="open_image[1]=0"/>
+</div>
+
+<div id="Lajpat" ng-class="{'exp_image':true,'open_image':open_image[2]}">
+  <img src="images/Resume/Lajpat.png"/>
+  <img src="icons/cross.png" class="exp_image_cross" ng-click="open_image[2]=0"/>
+</div>

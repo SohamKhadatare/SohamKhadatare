@@ -22,6 +22,10 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
             templateUrl: 'partials/4th_poster_typo.html',
             controller: 'HomeCtrl'
         })
+        .when('/comic', {
+            templateUrl: 'partials/comic.html',
+            controller: 'HomeCtrl'
+        })
         .otherwise({
             redirectTo: '/'
         });
@@ -165,6 +169,7 @@ app.controller('HomeCtrl', ['$scope', '$window', '$location',
             $location.path(path);
             $location.hash(hash);
         }
+
     }]);
 
 

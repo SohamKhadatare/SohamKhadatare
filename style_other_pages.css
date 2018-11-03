@@ -140,6 +140,29 @@
 	padding-bottom: 10vh;
 }
 
+/*******************************************************************
+                            Comic Book
+*********************************************************************/
+.comic{
+	font-size: 5.2vw;
+	font-family: HKGrotesk_Bold;
+	color: #215379;
+}
+.pdf_view{
+	width: 90%;
+	height: 80vh;
+	margin: auto;
+	padding-top: 2vh;
+	padding-bottom:2vh;
+}
+
+.comic_content{
+	width: 50%;
+	margin: auto;
+	padding-top: 2vh;
+	padding-bottom:2vh;
+}
+
 /****************************************************************************/
 /**********************************Resume*/
 /****************************************************************************/
@@ -287,8 +310,11 @@
 	.back{
 		width: 6vw;
 	}
-	.days_36,.token,.typo_poster,.culturals_website{
+	.days_36,.token,.typo_poster,.culturals_website,.comic{
 		font-size: 8vw;
+	}
+	.pdf_view{
+		height: 50vh;
 	}
 
 	/**************************/
